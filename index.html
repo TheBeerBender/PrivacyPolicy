@@ -23,43 +23,65 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p>Effective date: <strong>March&nbsp;5, 2026</strong></p>
+  <p>Effective date: <strong>May&nbsp;23, 2026</strong></p>
 
   <h2>1. Introduction</h2>
-  <p>This Privacy Policy explains how <em>MelodyScape</em> ("we", "us", or "our") collects, uses, and protects information when you use the MelodyScape iOS application (the "App").</p>
+  <p>This Privacy Policy explains how <em>MelodyScape</em> ("we", "us", or "our") collects, uses, stores, and protects information when you use the MelodyScape iOS application (the "App").</p>
 
   <h2>2. Information We Collect</h2>
   <ul>
-    <li><strong>Location Data.</strong> With your permission, the App accesses your precise location in the background. Location is used <em>only</em> to detect when you enter or exit the zones you create. Location data is stored locally on your device. We do not operate our own servers; we do not send your location to any service we control. When you use map features (e.g. directions, search, or address lookup), coordinates and queries are sent to Apple’s MapKit services under Apple’s privacy policies. If you enable iCloud Sync (see below), zone data that includes coordinates is stored in your iCloud account.</li>
-    <li><strong>Music Library Data.</strong> When you link Apple Music, the App uses MusicKit to browse your library and play songs. We do not copy, upload, or share your music data.</li>
-    <li><strong>User Files.</strong> The zones and maps you create are saved on your device. If you turn on <strong>iCloud Sync</strong> in Settings, those files (including zone locations) are also stored and synced across your devices via your iCloud account, subject to Apple’s privacy policy. If iCloud Sync is off, your files leave the device only when you explicitly export them via the share menu.</li>
-    <li><strong>Photos (optional).</strong> If you choose a custom background for the Live Activity (Standby) screen, the App lets you pick an image from your photo library. That image is stored only on your device in the App’s storage and is not shared with us or any third party.</li>
-    <li><strong>Purchase Information.</strong> If you choose to purchase a subscription or lifetime upgrade, purchases are processed by Apple through the App Store and StoreKit. We do not receive or store your full payment card information. Apple may provide us with limited transaction or entitlement information necessary to confirm your purchase status and unlock premium features. Your purchase is also subject to Apple’s privacy policy and terms.</li>
+    <li><strong>Location Data.</strong> With your permission, the App accesses your precise location, including in the background, to display your position, detect when you enter or exit zones, support route-based zones, update Live Activities/widgets, and trigger music behavior. Location data is stored locally on your device. We do not operate custom backend servers that receive your live location. When you use Apple map, directions, search, address lookup, or weather-based features, coordinates and related queries may be sent to Apple services such as MapKit and WeatherKit under Apple’s privacy policies. If you enable iCloud Sync or share maps/zones through CloudKit, zone data that includes coordinates may be stored in your iCloud account or shared through Apple CloudKit.</li>
+    <li><strong>Map, Zone, and Route Data.</strong> The maps, zones, routes, sub-zones, schedules, names, colors, route preferences, and related settings you create are saved on your device. These files may include coordinates, route geometry, time schedules, and assigned music metadata. If you turn on <strong>iCloud Sync</strong>, this data is also stored and synced through your iCloud account using Apple CloudKit.</li>
+    <li><strong>Cloud Sharing and Collaboration.</strong> If you share a map or zone, the App may create CloudKit records and assets containing map names, zone names, owner display names, zone geometry, sub-zones, schedules, music assignments, preview images, and related metadata. Shared maps may allow invited users to view or edit, depending on the sharing settings. Public read-only zone snapshot links may be accessible to anyone with the link.</li>
+    <li><strong>Music Library Data.</strong> When you link Apple Music, the App uses MusicKit and MediaPlayer to browse your library, display music metadata and artwork, assign music to zones, and play music. Saved maps and shared maps may include music identifiers, titles, artists, playlist or album names, artwork URLs, and related metadata needed to restore assignments. We do not copy or upload your full Apple Music library to our own servers.</li>
+    <li><strong>Artwork and Cached Media.</strong> The App may cache music artwork on your device and in the App Group container so widgets, Live Activities, and CarPlay can display it. Artwork may be downloaded from Apple Music artwork URLs when needed.</li>
+    <li><strong>User Files.</strong> If you import or export a <code>.melodyscape</code> file, that file may contain map names, zone locations, routes, schedules, music assignments, and related metadata. If iCloud Sync is off, your files leave the device only when you explicitly export or share them.</li>
+    <li><strong>Photos (optional).</strong> If you choose a custom background for the Live Activity or StandBy screen, the App lets you pick an image from your photo library. That image is resized, stored in the App’s local App Group storage, and used by the App and widget extension. It is not shared with us.</li>
+    <li><strong>Widgets, Live Activities, Shortcuts, and App Intents.</strong> To support widgets, Live Activities, Shortcuts, Siri, Spotlight-style entity lookup, and app controls, the App may store selected map names, zone names, coordinates, music titles, artists, artwork filenames, mute state, and related display data locally in shared App Group storage.</li>
+    <li><strong>Purchase Information.</strong> If you choose to purchase a subscription or lifetime upgrade, purchases are processed by Apple through the App Store and StoreKit. We do not receive or store your full payment card information. Apple may provide limited transaction or entitlement information necessary to confirm your purchase status and unlock premium features.</li>
+    <li><strong>Feedback Information (optional).</strong> If you choose to send feedback from within the App, the email may include your app version, build number, iOS version, and device model, along with any message you write. Feedback is sent to <a href="mailto:melodyscapeapp@gmail.com">melodyscapeapp@gmail.com</a> using your mail provider or mail app.</li>
   </ul>
 
   <h2>3. How We Use Information</h2>
   <ul>
     <li>To display your current position on the map.</li>
-    <li>To trigger music playback when you enter or exit a zone.</li>
-    <li>To let you browse and assign tracks from your Apple Music library.</li>
+    <li>To detect zone entry and exit, including in the background.</li>
+    <li>To trigger or stop music playback when you enter, exit, or move through zones.</li>
+    <li>To support route-based zones, sub-zones, schedules, weather-based music rules, and navigation guidance.</li>
+    <li>To let you browse and assign tracks, albums, artists, and playlists from Apple Music.</li>
+    <li>To sync maps across your devices if you enable iCloud Sync.</li>
+    <li>To let you share or collaborate on maps and zones if you choose to use sharing features.</li>
+    <li>To display widgets, Live Activities, CarPlay content, Shortcuts, and app controls.</li>
     <li>To confirm premium purchase status and provide access to premium features.</li>
+    <li>To respond to support or feedback emails you choose to send.</li>
   </ul>
 
   <h2>4. Data Sharing</h2>
-  <p>We do <strong>not</strong> share your personal information with third parties (such as advertisers or data brokers). We do not operate our own servers. Location and zone data are not sent to any service we control. If iCloud Sync is enabled, your zones and maps are stored in your iCloud account and synced by Apple. Music playback and map features (directions, search, geocoding) use Apple Music and Apple MapKit under Apple’s privacy policies. Purchases and subscriptions are processed by Apple through the App Store.</p>
+  <p>We do <strong>not</strong> sell your personal information, share it with advertisers, or use it for tracking. We do not operate custom backend servers for the App. Off-device features use Apple services or services you explicitly choose.</p>
+  <ul>
+    <li><strong>Apple services.</strong> iCloud Sync, CloudKit sharing, Apple Music, MusicKit, StoreKit, MapKit, WeatherKit, Live Activities, widgets, push notifications for CloudKit sync, and App Intents are provided by Apple and are subject to Apple’s privacy policies.</li>
+    <li><strong>Shared maps and zones.</strong> If you share a map or zone, the people you share with, or anyone with a public read-only link, may be able to access the shared content and metadata included in that share.</li>
+    <li><strong>External map apps.</strong> If you open directions in Apple Maps or Google Maps, the destination coordinates and travel mode are sent to the selected map service and handled under that service’s privacy policy.</li>
+    <li><strong>Feedback email.</strong> If you send feedback, the email and included diagnostic details are transmitted through your mail provider and received by us at the support email address.</li>
+  </ul>
 
   <h2>5. Data Retention</h2>
-  <p>When iCloud Sync is <strong>off</strong>, all personal data stays on your device until you delete the App or remove it within the App. When iCloud Sync is <strong>on</strong>, your zones and maps are also stored in your iCloud account; they may remain there after you delete the App until you remove them from iCloud Drive or disable iCloud Sync. You can erase zones at any time from within the App or delete the App to remove data from the device.</p>
+  <p>When iCloud Sync is <strong>off</strong>, your maps, zones, settings, artwork cache, widget data, Live Activity data, and custom background image are stored on your device until you delete them in the App, remove cached data, or delete the App.</p>
+  <p>When iCloud Sync is <strong>on</strong>, your maps and zones are also stored in your iCloud account using Apple CloudKit and may remain there until you delete them, disable sync, remove them from iCloud, or delete the associated CloudKit data. Shared CloudKit records may remain available to participants or link recipients until sharing is stopped or the shared content is deleted.</p>
 
   <h2>6. Your Choices</h2>
   <ul>
     <li>You may revoke location permission at any time in iOS Settings ▸ Privacy & Security ▸ Location Services.</li>
     <li>You may disconnect Apple Music access in iOS Settings ▸ Music ▸ Apps with Access.</li>
-    <li>You may turn off iCloud Sync at any time in the App’s Settings; your data will then be stored only on the device.</li>
+    <li>You may turn off iCloud Sync at any time in the App’s Settings.</li>
+    <li>You may stop sharing maps or zones through the App or Apple’s sharing controls.</li>
+    <li>You may remove a custom Live Activity background in the App’s Settings.</li>
+    <li>You may disable Live Activities, widgets, notifications, or Shortcuts-related access through iOS settings where available.</li>
+    <li>You may choose not to send feedback emails or remove diagnostic details before sending.</li>
   </ul>
 
   <h2>7. Your Rights</h2>
-  <p>Depending on your location, you may have rights to request access to, correction of, or deletion of personal data we process about you, and to lodge a complaint with your local data protection authority. To exercise these rights, please contact us at <a href="mailto:melodyscapeapp@gmail.com">melodyscapeapp@gmail.com</a>. Because much of the App’s data is stored on your device or in your personal Apple account, some requests may need to be completed by you directly in the App, in iOS Settings, or through Apple services such as iCloud or the App Store.</p>
+  <p>Depending on your location, you may have rights to request access to, correction of, or deletion of personal data we process about you, and to lodge a complaint with your local data protection authority. To exercise these rights, please contact us at <a href="mailto:melodyscapeapp@gmail.com">melodyscapeapp@gmail.com</a>. Because most App data is stored on your device, in your personal Apple account, or in Apple services such as iCloud, CloudKit, Apple Music, or the App Store, some requests may need to be completed by you directly in the App, in iOS Settings, or through Apple services.</p>
 
   <h2>8. Children</h2>
   <p>The App is not directed at children under 13. We do not knowingly collect personal information from children.</p>
